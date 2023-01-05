@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+span{
+    color: #581258;
+}
+/*==== frase ====*/
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    background-color: #23232e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+/*==== slides ====*/
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+}
+/*==== navegacao manual ====*/
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: none;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #581258;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: aliceblue;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+/*==== navegação automatica ====*/
+.navigation-auto div{
+    border: 2px solid #581258;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 360px;
+    display: none;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+/*==== transição automatica das imagens ====*/
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: aliceblue;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: aliceblue;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: aliceblue;
+}
+/*==== produtos ====*/
+.txt{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4%;
+    font-size: 18px;
+}
+.producer{
+    padding: 50px;
+    display: flex;
+} 
+.proItem{
+    flex: 1;
+    padding: 50px;
+}
+.proTitle{
+    font-size: 26px;
+}
+.proImg{
+    width: 100%;
+}
