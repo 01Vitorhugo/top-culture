@@ -3,6 +3,7 @@ include('menu.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@ include('menu.php');
     <title>Top Culture</title>
     <link rel="stylesheet" href="CSS/home.css">
 </head>
+
 <body>
     <!-- slides iniciais -->
     <section class="news">ao navegar nesse site você aceita o risco de viciar nos nossos produtos?</section>
@@ -28,7 +30,7 @@ include('menu.php');
                 <img src="img/banner/teste2.jpg" alt="imagem2">
             </div>
             <div class="slide">
-                 <img src="img/banner/teste3.jpg" alt="imagem3">
+                <img src="img/banner/teste3.jpg" alt="imagem3">
             </div>
 
             <!-- troca automatica -->
@@ -38,12 +40,12 @@ include('menu.php');
                 <div class="auto-btn3"></div>
             </div>
         </div>
-            <!-- navegação manual -->
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
+        <!-- navegação manual -->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
     </div>
     <script src="js/home.js"></script>
 
@@ -70,5 +72,24 @@ include('menu.php');
             <img src="img/producer/drip3.jpg" alt="" class="proImg">
         </div>
     </div>
+    <!-- conhecendo mais sobre o style -->
+    <div class="convite">
+        <div class="conv">
+            <div class="conv-text">
+                <h2>STREET<span>WEAR</span></h2>
+                <br>
+                <p>É aquele que mistura elementos esportivos com a moda de rua ligada ao rap, hip-hop, skate, surf e até mesmo punk.
+                    Ele expressa a cultura e o comportamento urbano que cada comunidade carrega, por meio de peças e acessórios.</p>
+                <div class="button">
+                    <a href="#"><button type="button" class="btn">visitar</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="logo-tc">
+            <img src="img/logo/logo.png" alt="" width="300px">
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
