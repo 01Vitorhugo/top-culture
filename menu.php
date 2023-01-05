@@ -9,15 +9,21 @@
     <title>Menu</title>
 </head>
 <body>
-    
-
     <nav>
         <ul>
         <li><a href="#">Lançamentos</a></li>
         <li><a href="#">Acessórios</a></li>
         <li><a href="#">Marcas</a></li>
         <li><a href="#">Roupas</a></li>
-        <li><a href="#">Login</a></li>
+        <?php
+        @session_start();
+        if(@$_SESSION['true']){
+       echo "<li><a href=cadastro.php>Sair</a></li>";
+    }else{
+       echo "<li><a href=login.php>Entrar</a></li>";
+
+    }
+        ?>
         </ul>
     </nav>
 
