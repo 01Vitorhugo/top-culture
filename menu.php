@@ -17,11 +17,11 @@
         <li><a href="#">Roupas</a></li>
         <?php
         @session_start();
-        if(@$_SESSION['true']){
-       echo "<li><a href=cadastro.php>Sair</a></li>";
+        if(@$_SESSION['login']){
+       echo "<li><a href=home.php>Sair</a></li>";
+       //Criar logoff do login
     }else{
        echo "<li><a href=login.php>Entrar</a></li>";
-
     }
         ?>
         </ul>
