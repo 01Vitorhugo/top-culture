@@ -11,8 +11,8 @@ include('menu.php');
     <link rel="stylesheet" href="CSS/home.css">
 </head>
 <body>
-        <!-- slides iniciais -->
-        <section class="news">ao navegar nesse site você aceita o risco de viciar nos nossos produtos?</section>
+    <!-- slides iniciais -->
+    <section class="news">ao navegar nesse site você aceita o risco de viciar nos nossos produtos?</section>
     <!-- botões -->
     <div class="slider">
         <div class="slides">
