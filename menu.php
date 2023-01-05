@@ -9,8 +9,6 @@
     <title>Menu</title>
 </head>
 <body>
-    
-
     <nav>
         <ul>
         <li><a href="#">Lançamentos</a></li>
