@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 03-Jan-2023 às 03:13
+-- Tempo de geração: 05-Jan-2023 às 22:10
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `tb_cadastro` (
   `funcao` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `senha` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tb_cadastro`
@@ -46,8 +46,7 @@ CREATE TABLE IF NOT EXISTS `tb_cadastro` (
 
 INSERT INTO `tb_cadastro` (`codigo`, `nome`, `email`, `cpf`, `funcao`, `senha`) VALUES
 (8, 'gustavo', 'gustavo@gmail.com', '111', 'cli', '202cb962ac59075b964b07152d234b70'),
-(7, 'vitor', 'hugo@01.com', '12212', 'admin', '202cb962ac59075b964b07152d234b70'),
-(9, 'Vitor Hugo', 'vitorhugo0031@outlook.com', '2334234234', 'cli', '827ccb0eea8a706c4c34a16891f84e7b');
+(7, 'vitor', 'hugo@01.com', '12212', 'admin', '202cb962ac59075b964b07152d234b70');
 
 -- --------------------------------------------------------
 
@@ -94,7 +93,16 @@ CREATE TABLE IF NOT EXISTS `tb_cadastro_tc` (
   `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `senha` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Extraindo dados da tabela `tb_cadastro_tc`
+--
+
+INSERT INTO `tb_cadastro_tc` (`codigo`, `nome`, `sobrenome`, `email`, `senha`) VALUES
+(6, 'Vitor', 'Hugo', 'Vitorhugo0031@outlook.com', '698d51a19d8a121ce581499d7b701668'),
+(5, 'sdfs', 'dfsd', 'sdf', 'd9729feb74992cc3482b350163a1a010'),
+(4, '$nome', '$sobrenome', '$email', '$senha');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
