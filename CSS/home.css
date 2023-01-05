@@ -123,3 +123,46 @@ span{
 .proImg{
     width: 100%;
 }
+/*==== convite ====*/
+.convite{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: #23232e;
+    color: #fff;
+    height: 24vh;
+    align-items: center;
+}
+.conv{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.conv-text{
+    font-size: 16px;
+}
+/*==== botao ====*/
+.btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+    background-color: #581258;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 1s;
+    background-color: #370f53;
+    color: #fff;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
