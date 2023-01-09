@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-*{
+
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
-span{
+
+span {
     color: #581258;
 }
+
 /*==== frase ====*/
-.news{
+.news {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,38 +22,45 @@ span{
     font-size: 14px;
     font-weight: 600;
 }
+
 /*==== slides ====*/
-.slider{
+.slider {
     margin: 0 auto;
     width: 100%;
     height: 400px;
     overflow: hidden;
 }
-.slides{
+
+.slides {
     width: 400%;
     height: 400px;
     display: flex;
 }
-.slides input{
+
+.slides input {
     display: none;
 }
-.slide{
+
+.slide {
     width: 25%;
     position: relative;
     transition: 2s;
 }
-.slide img{
+
+.slide img {
     width: 100%;
 }
+
 /*==== navegacao manual ====*/
-.manual-navigation{
+.manual-navigation {
     position: absolute;
     width: 100%;
     margin-top: -40px;
     display: none;
     justify-content: center;
 }
-.manual-btn{
+
+.manual-btn {
     border: 2px solid #581258;
     padding: 5px;
     border-radius: 10px;
@@ -58,73 +68,89 @@ span{
     transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
-.manual-btn:hover{
+
+.manual-btn:hover {
     background-color: aliceblue;
 }
-#radio1:checked ~ .first{
+
+#radio1:checked~.first {
     margin-left: 0;
 }
-#radio2:checked ~ .first{
+
+#radio2:checked~.first {
     margin-left: -25%;
 }
-#radio3:checked ~ .first{
+
+#radio3:checked~.first {
     margin-left: -50%;
 }
+
 /*==== navegação automatica ====*/
-.navigation-auto div{
+.navigation-auto div {
     border: 2px solid #581258;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
 }
-.navigation-auto{
+
+.navigation-auto {
     position: absolute;
     width: 100%;
     margin-top: 360px;
     display: none;
     justify-content: center;
 }
-.navigation-auto div:not(:last-child){
+
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
+
 /*==== transição automatica das imagens ====*/
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: aliceblue;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
+
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: aliceblue;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
+
+#radio3:checked~.navigation-auto .auto-btn3 {
     background-color: aliceblue;
 }
+
 /*==== produtos ====*/
-.txt{
+.txt {
     display: flex;
     text-align: center;
     justify-content: center;
     margin-top: 4%;
     font-size: 18px;
 }
-.producer{
+
+.producer {
     padding: 50px;
     display: flex;
-} 
-.proItem{
+}
+
+.proItem {
     flex: 1;
     padding: 50px;
 }
-.proTitle{
+
+.proTitle {
     font-size: 26px;
 }
-.proImg{
+
+.proImg {
     width: 100%;
 }
+
 /*==== convite ====*/
-.convite{
+.convite {
     display: flex;
     justify-content: space-around;
     padding: 30px;
@@ -133,15 +159,18 @@ span{
     height: 24vh;
     align-items: center;
 }
-.conv{
+
+.conv {
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
 }
-.conv-text{
+
+.conv-text {
     font-size: 16px;
 }
+
 /*==== botao ====*/
 .btn {
     padding: 10px 30px;
@@ -166,49 +195,91 @@ span{
     justify-content: center;
     margin-top: 20px;
 }
+
+/*==== serviços ====*/
+.services-title {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: black;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.serviceImg {
+    width: 50px;
+    height: 50px;
+}
+
+.serviceTitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.serviceDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
 /*==== rodapé ====*/
- .footer{
+.footer {
     background-color: black;
-    padding:30px 10%;
+    padding: 30px 10%;
     margin-top: 200px;
- }
- 
- .footer .box-container{
+}
+
+.footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
- }
- 
- .footer .box-container .box h3{
+}
+
+.footer .box-container .box h3 {
     color: #fff;
     padding-bottom: 20px;
- }
- 
- .footer .box-container .box a{
+}
+
+.footer .box-container .box a {
     color: #fff9;
     font-size: 14px;
     padding-bottom: 26px;
     display: block;
- }
- 
- .footer .box-container .box a i{
+}
+
+.footer .box-container .box a i {
     color: #8e44ad;
     padding-right: 6px;
     transition: .2s linear;
- }
- 
- .footer .box-container .box a:hover i{
+}
+
+.footer .box-container .box a:hover i {
     padding-right: 16px;
- }
- 
- .footer .credit{
+}
+
+.footer .credit {
     text-align: center;
     padding-top: 20px;
     margin-top: 30px;
     border-top: 1px solid #581258;
     font-size: 14px;
     color: #fff9;
- }
- 
- .footer .credit span{
-    color:#581258;
- }
+}
+
+.footer .credit span {
+    color: #581258;
+}
