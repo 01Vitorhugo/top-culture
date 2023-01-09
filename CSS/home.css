@@ -166,3 +166,49 @@ span{
     justify-content: center;
     margin-top: 20px;
 }
+/*==== rodapé ====*/
+ .footer{
+    background-color: black;
+    padding:30px 10%;
+    margin-top: 200px;
+ }
+ 
+ .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+ }
+ 
+ .footer .box-container .box h3{
+    color: #fff;
+    padding-bottom: 20px;
+ }
+ 
+ .footer .box-container .box a{
+    color: #fff9;
+    font-size: 14px;
+    padding-bottom: 26px;
+    display: block;
+ }
+ 
+ .footer .box-container .box a i{
+    color: #8e44ad;
+    padding-right: 6px;
+    transition: .2s linear;
+ }
+ 
+ .footer .box-container .box a:hover i{
+    padding-right: 16px;
+ }
+ 
+ .footer .credit{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #581258;
+    font-size: 14px;
+    color: #fff9;
+ }
+ 
+ .footer .credit span{
+    color:#581258;
+ }
