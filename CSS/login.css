@@ -1,4 +1,25 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+}
 .alert-php{
     color: red;
-    background-color: blue;
+    animation: fadeInUp 1s;
+    height: 50px;
+    padding-top: 30px;
+}
+.formu{
+    height: 600px;
+    width: 80%;
+    background-color: aqua;
+}
+.inputs{
+    
 }
