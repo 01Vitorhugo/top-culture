@@ -12,17 +12,19 @@
     <nav>
         <ul>
         <li><a href="#">Top Culture</a></li>
-        <li><a href="#">Acessórios</a></li>
+        <li><a href="acessorios.php">Acessórios</a></li>
         <li><a href="#">Roupas</a></li>
+
         <?php
         @session_start();
-        if(@$_SESSION['login']){
+        if(@$_SESSION['login'] == true){
        echo "<li><a href=logoff.php>Sair</a></li>";
        //Criar logoff do login
     }else{
        echo "<li><a href=login.php>Entrar</a></li>";
     }
         ?>
+
         </ul>
     </nav>
 
