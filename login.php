@@ -12,7 +12,6 @@
 <form action="login.act.php" method="post">
 
 <div class="msg-php">
-
 <?php
 @session_start();
 if(isset($_SESSION['msg'])){
@@ -20,16 +19,11 @@ if(isset($_SESSION['msg'])){
     unset($_SESSION['msg']);
 }
 ?>
+</div>
 
 <input type="text" name="email" placeholder="E-mail">
             <input type="password"  name="senha" placeholder="Senha:">
             <input id="dif" type="submit" value="CONTINUAR">
-
-            <h4>Ainda não tem cadastro? <a href="cadastro.php"> cadastre-se</a></h4>
-
-
-
-</div>
 
 
     
