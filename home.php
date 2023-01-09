@@ -10,6 +10,8 @@ include('menu.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Culture</title>
     <link rel="stylesheet" href="CSS/home.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -78,8 +80,10 @@ include('menu.php');
             <div class="conv-text">
                 <h2>STREET<span>WEAR</span></h2>
                 <br>
-                <p>É aquele que mistura elementos esportivos com a moda de rua ligada ao rap, hip-hop, skate, surf e até mesmo punk.
-                    Ele expressa a cultura e o comportamento urbano que cada comunidade carrega, por meio de peças e acessórios.</p>
+                <p>É aquele que mistura elementos esportivos com a moda de rua ligada ao rap, hip-hop, skate, surf e até
+                    mesmo punk.
+                    Ele expressa a cultura e o comportamento urbano que cada comunidade carrega, por meio de peças e
+                    acessórios.</p>
                 <div class="button">
                     <a href="#"><button type="button" class="btn">visitar</button></a>
                 </div>
@@ -90,6 +94,40 @@ include('menu.php');
         </div>
     </div>
     </div>
+    <!-- rodapé -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our links</h3>
+                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
+                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
+                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
+                <a href=""><i class="fas fa-angle-right"></i>roupas</a>
+            </div>
+            <div class="box">
+                <h3>our links</h3>
+                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
+                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
+                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
+                <a href=""><i class="fas fa-angle-right"></i>roupas</a>
+            </div>
+            <div class="box">
+                <h3>our links</h3>
+                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
+                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
+                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
+                <a href=""><i class="fas fa-angle-right"></i>roupas</a>
+            </div>
+            <div class="box">
+                <h3>our links</h3>
+                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
+                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
+                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
+                <a href=""><i class="fas fa-angle-right"></i>roupas</a>
+            </div>
+        </div>
+        <div class="credit">Copyright © by TopCulture | all rights reserved!</div>
+    </section>
 </body>
 
 </html>
