@@ -1,0 +1,23 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background-color: aquamarine; */
+}
+h1{
+    text-align: center;
+}
+h2{
+    color: #f8f8f8;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    /* background-color: black; */
+    height: 600px;
+    text-align: center;
+}
