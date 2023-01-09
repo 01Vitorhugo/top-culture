@@ -12,6 +12,8 @@ include('menu.php');
     <link rel="stylesheet" href="CSS/home.css">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -50,6 +52,31 @@ include('menu.php');
         </div>
     </div>
     <script src="js/home.js"></script>
+
+        <!-- serviços -->
+        <h1 class="services-title"> nossos serviços </h1>
+    <div class="services">
+        <div class="service">
+            <img class="serviceImg" src="img/services/frete.png" alt="">
+            <span class="serviceTitle">FRETE GRÁTIS</span>
+            <span class="serviceDesc">frete grátis para compras acima de R$250,00</span>
+        </div>
+        <div class="service">
+            <img class="serviceImg" src="img/services/return.png" alt="">
+            <span class="serviceTitle">TROCAS E DEVOLUÇÕES</span>
+            <span class="serviceDesc">o prazo é de até 7 dias corridos a partir da data de recebimento do produto.</span>
+        </div>
+        <div class="service">
+            <img class="serviceImg" src="img/services/cartao.png" alt="">
+            <span class="serviceTitle">PAGAMENTOS</span>
+            <span class="serviceDesc">até em 12x ou à vista</span>
+        </div>
+        <div class="service">
+            <img class="serviceImg" src="img/services/whatsapp.png" alt="">
+            <span class="serviceTitle">ENTRE EM CONTATO</span>
+            <span class="serviceDesc">caso precise, nos chame no whatsapp e fale com um de nossos atendentes.</span>
+        </div>
+    </div>
 
     <!-- anunciando alguns produtos -->
     <section class="txt" id="txt">
@@ -93,59 +120,38 @@ include('menu.php');
             <img src="img/logo/logo.png" alt="" width="300px">
         </div>
     </div>
-    <!-- serviços -->
-    <h1 class="services-title"> nossos serviços </h1>
-    <div class="services">
-        <div class="service">
-            <img class="serviceImg" src="img/services/frete.png" alt="">
-            <span class="serviceTitle">FRETE GRÁTIS</span>
-            <span class="serviceDesc">frete grátis para comprar acima de R$250,00</span>
-        </div>
-        <div class="service">
-            <img class="serviceImg" src="img/services/return.png" alt="">
-            <span class="serviceTitle">TROCAS E DEVOLUÇÕES</span>
-            <span class="serviceDesc">o prazo é de até 7 dias corridos a partir da data de recebimento doproduto.</span>
-        </div>
-        <div class="service">
-            <img class="serviceImg" src="img/services/cartao.png" alt="">
-            <span class="serviceTitle">PAGAMENTOS</span>
-            <span class="serviceDesc">até em 12x ou à vista</span>
-        </div>
-    </div>
     <!-- rodapé -->
     <section class="footer">
         <div class="box-container">
             <div class="box">
                 <h3>our links</h3>
-                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
-                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
-                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
-                <a href=""><i class="fas fa-angle-right"></i>roupas</a>
+                <a href=""><i class="fas fa-angle-right"></i>Top Culture</a>
+                <a href=""><i class="fas fa-angle-right"></i>Acessórios</a>
+                <a href=""><i class="fas fa-angle-right"></i>Roupas</a>
+            </div>
+            <div class="box">
+                <h3>atendimento</h3>
+                <a href=""><i class="fas fa-angle-right"></i>FAQ</a>
+                <a href=""><i class="fas fa-angle-right"></i>termos de serviços</a>
+                <a href=""><i class="fas fa-angle-right"></i>fale conosco</a>
             </div>
             <div class="box">
                 <h3>our links</h3>
                 <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
                 <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
                 <a href=""><i class="fas fa-angle-right"></i>marcas</a>
-                <a href=""><i class="fas fa-angle-right"></i>roupas</a>
             </div>
             <div class="box">
                 <h3>our links</h3>
                 <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
                 <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
                 <a href=""><i class="fas fa-angle-right"></i>marcas</a>
-                <a href=""><i class="fas fa-angle-right"></i>roupas</a>
-            </div>
-            <div class="box">
-                <h3>our links</h3>
-                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
-                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
-                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
-                <a href=""><i class="fas fa-angle-right"></i>roupas</a>
             </div>
         </div>
         <div class="credit">Copyright © by TopCulture | all rights reserved!</div>
     </section>
+
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
