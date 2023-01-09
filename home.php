@@ -93,6 +93,24 @@ include('menu.php');
             <img src="img/logo/logo.png" alt="" width="300px">
         </div>
     </div>
+    <!-- serviços -->
+    <h1 class="services-title"> nossos serviços </h1>
+    <div class="services">
+        <div class="service">
+            <img class="serviceImg" src="img/services/frete.png" alt="">
+            <span class="serviceTitle">FRETE GRÁTIS</span>
+            <span class="serviceDesc">frete grátis para comprar acima de R$250,00</span>
+        </div>
+        <div class="service">
+            <img class="serviceImg" src="img/services/return.png" alt="">
+            <span class="serviceTitle">TROCAS E DEVOLUÇÕES</span>
+            <span class="serviceDesc">o prazo é de até 7 dias corridos a partir da data de recebimento doproduto.</span>
+        </div>
+        <div class="service">
+            <img class="serviceImg" src="img/services/cartao.png" alt="">
+            <span class="serviceTitle">PAGAMENTOS</span>
+            <span class="serviceDesc">até em 12x ou à vista</span>
+        </div>
     </div>
     <!-- rodapé -->
     <section class="footer">
