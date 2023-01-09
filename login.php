@@ -25,6 +25,8 @@ if(isset($_SESSION['msg'])){
             <input type="password"  name="senha" placeholder="Senha:">
             <input id="dif" type="submit" value="CONTINUAR">
 
+            <p>Fazer <a href="cadastro.php">Cadastro</a></p>
+
 
     
 </form>
