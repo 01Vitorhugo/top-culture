@@ -27,4 +27,7 @@ $target = "";
     echo "<p>$msg</p>";
     echo "<p>$target</p>";
     $_SESSION['msg'] = $msg;
+    if($_SESSION['login'] = true && $_SESSION['email'] == "topculture@gmail.com"){
+        $target = "location:menuAdm.html";
+    }
     header($target);
