@@ -11,9 +11,8 @@
 <body>
     <nav>
         <ul>
-        <li><a href="#">Lançamentos</a></li>
+        <li><a href="#">Top Culture</a></li>
         <li><a href="#">Acessórios</a></li>
-        <li><a href="#">Marcas</a></li>
         <li><a href="#">Roupas</a></li>
         <?php
         @session_start();
