@@ -14,7 +14,7 @@ VALUES (NULL, '$nome', '$valor', '$endereco');")){
     $msg = "<p class=no>Erro ao se registrar!</p>";
 }
 
-session_start();
+    @session_start();
     $_SESSION['msg']= $msg;
     header("location: acessorios.php");
 ?>
