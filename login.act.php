@@ -14,10 +14,11 @@ $target = "";
     if($buscar -> num_rows == 1){
         $login = mysqli_fetch_array($buscar);
         if($senha === $login['senha']){
-            $_SESSION['login'] = true;
+            // $_SESSION['login'] = true;
+            $_SESSION['logina'] = true;
             $_SESSION['email'] = $login['email'];
             $target = "location:home.php";
-            $msg = "";
+            $msg = " ";    
         }
 
     }else{
@@ -28,6 +29,7 @@ $target = "";
     echo "<p>$target</p>";
     $_SESSION['msg'] = $msg;
     if($_SESSION['login'] = true && $_SESSION['email'] == "topculture@gmail.com"){
-        $target = "location:menuAdm.html";
+        $target = "location:menuAdm.php";
     }
     header($target);
+    

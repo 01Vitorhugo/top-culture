@@ -1,7 +1,8 @@
 <?php
 @session_start();
-unset($_SESSION['login']);
+$_SESSION['logina'] = false;
 $_SESSION['email'] = "";
-
+// $_SESSION['a'] = false;
+$_SESSION['msg'] = "" ;
 header("location:home.php");
 ?>

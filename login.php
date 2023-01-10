@@ -14,6 +14,7 @@
 <div class="msg-php">
 <?php
 @session_start();
+// var_dump($_SESSION);
 if(isset($_SESSION['msg'])){
     echo "<p class=alert-php>$_SESSION[msg]</p>";
     unset($_SESSION['msg']);
