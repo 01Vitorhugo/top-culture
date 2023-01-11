@@ -124,7 +124,7 @@ include('menu.php');
     <section class="footer">
         <div class="box-container">
             <div class="box">
-                <h3>our links</h3>
+                <h3>nossos links</h3>
                 <a href=""><i class="fas fa-angle-right"></i>Top Culture</a>
                 <a href=""><i class="fas fa-angle-right"></i>Acessórios</a>
                 <a href=""><i class="fas fa-angle-right"></i>Roupas</a>
