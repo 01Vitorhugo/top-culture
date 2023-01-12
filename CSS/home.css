@@ -5,7 +5,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 span {
     color: #581258;
 }
@@ -17,16 +19,17 @@ span {
     justify-content: center;
     width: 100%;
     height: 30px;
+    
     background-color: #23232e;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
 }
 
-/*==== slides ====*/
+/*==== slides/banner ====*/
 .slider {
     margin: 0 auto;
-    width: 100%;
+    width: 800px;
     height: 400px;
     overflow: hidden;
 }
@@ -48,13 +51,13 @@ span {
 }
 
 .slide img {
-    width: 100%;
+    width: 800px;
 }
 
 /*==== navegacao manual ====*/
 .manual-navigation {
     position: absolute;
-    width: 100%;
+    width: 800px;
     margin-top: -40px;
     display: none;
     justify-content: center;
