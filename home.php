@@ -7,7 +7,7 @@ include('menu.php');
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Top Culture</title>
     <link rel="stylesheet" href="CSS/home.css">
     <!-- icons -->
@@ -17,9 +17,9 @@ include('menu.php');
 </head>
 
 <body>
-    <!-- slides iniciais -->
+    <!-- mensagem pós menu -->
     <section class="news">ao navegar nesse site você aceita o risco de viciar nos nossos produtos?</section>
-    <!-- botões -->
+    <!-- slides/banner -->
     <div class="slider">
         <div class="slides">
             <input type="radio" name="radio-btn" id="radio1">
@@ -28,13 +28,13 @@ include('menu.php');
 
             <!-- imagens -->
             <div class="slide first">
-                <img src="img/banner/teste1.jpg" alt="imagem1">
+                <img src="img/banner/slider0.jpg" alt="imagem1">
             </div>
             <div class="slide">
-                <img src="img/banner/teste2.jpg" alt="imagem2">
+                <img src="img/banner/slider1.jpg" alt="imagem2">
             </div>
             <div class="slide">
-                <img src="img/banner/teste3.jpg" alt="imagem3">
+                <img src="img/banner/slider2.jpg" alt="imagem3">
             </div>
 
             <!-- troca automatica -->
