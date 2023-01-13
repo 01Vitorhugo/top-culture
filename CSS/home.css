@@ -2,8 +2,9 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
 }
 body{
     overflow-x: hidden;
@@ -19,7 +20,6 @@ span {
     justify-content: center;
     width: 100%;
     height: 30px;
-    
     background-color: #23232e;
     color: #fff;
     font-size: 14px;
@@ -27,104 +27,129 @@ span {
 }
 
 /*==== slides/banner ====*/
-.slider {
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
+section {
+    padding: 2rem 9%;
 }
 
-.slides {
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
+.banner {
+    padding: 0;
     position: relative;
-    transition: 2s;
 }
 
-.slide img {
-    width: 800px;
+.banner .slide-container .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 10%;
 }
 
-/*==== navegacao manual ====*/
-.manual-navigation {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
+.banner .slide-container .slide .content {
+    flex: 1 1 40rem;
+    animation: slideContent .8s ease-out;
+}
+
+@keyframes slideContent {
+    0% {
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+}
+
+.banner .slide-container .slide .image {
+    flex: 1 1 50rem;
+    padding-bottom: 26px;
+    position: relative;
+    z-index: 0;
+}
+
+.banner .slide-container .slide .image .shoe {
+    width: 80%;
+    animation: shoe .6s ease-out;
+}
+
+@keyframes shoe {
+    0% {
+        transform: rotate(0deg) scale(.5);
+    }
+}
+
+.banner .slide-container .slide .content span {
+    font-size: 30px;
+    color: purple;
+}
+
+.banner .slide-container .slide .content h3 {
+    color: black;
+}
+
+.banner .slide-container .slide .content p {
+    font-size: 18px;
+    color: #666;
+    padding: 20px 0;
+}
+.banner .slide-container .slide .content a{
+    text-decoration: none;
+}
+
+.banner .slide-container {
     display: none;
-    justify-content: center;
 }
 
-.manual-btn {
-    border: 2px solid #581258;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+.banner .slide-container.active {
+    display: block;
 }
 
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: aliceblue;
-}
-
-#radio1:checked~.first {
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -25%;
-}
-
-#radio3:checked~.first {
-    margin-left: -50%;
-}
-
-/*==== navegação automatica ====*/
-.navigation-auto div {
-    border: 2px solid #581258;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto {
+.banner #prev,
+.banner #next {
     position: absolute;
-    width: 100%;
-    margin-top: 360px;
-    display: none;
-    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 100;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    color: black;
+    border: 3px solid black;
+    cursor: pointer;
+    text-align: center;
 }
 
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
+.banner #prev:hover,
+.banner #next:hover {
+    color: #fff;
+    background: purple;
+    transition: .4s ease-out;
 }
 
-/*==== transição automatica das imagens ====*/
-#radio1:checked~.navigation-auto .auto-btn1 {
-    background-color: aliceblue;
+.banner #prev {
+    left: 20px;
 }
 
-#radio2:checked~.navigation-auto .auto-btn2 {
-    background-color: aliceblue;
+.banner #next {
+    right: 20px;
 }
 
-#radio3:checked~.navigation-auto .auto-btn3 {
-    background-color: aliceblue;
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .2rem solid black;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: black;
+    cursor: pointer;
+    background: #fff;
+    padding: .8rem 3rem;
 }
 
+.btn:hover {
+    background: purple;
+    color: #fff;
+}
 /*==== serviços ====*/
 .services-title {
     text-align: center;
@@ -290,6 +315,6 @@ span {
 }
 
 /*===== scroll animado===== */
-.slider, .services-title,.services,.content, .producer, .convite{
+.slider, .services-title,.services,.info, .producer, .convite{
 	visibility: hidden;
 }
