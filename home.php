@@ -18,40 +18,55 @@ include('menu.php');
 
 <body>
     <!-- mensagem pós menu -->
-    <section class="news">ao navegar nesse site você aceita o risco de viciar nos nossos produtos?</section>
+    <header class="news">ao navegar nesse site você aceita o risco de viciar nos nossos produtos?</header>
     <!-- slides/banner -->
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-
-            <!-- imagens -->
-            <div class="slide first">
-                <img src="img/banner/slider0.jpg" alt="imagem1">
-            </div>
+    <section class="banner" id="banner">
+        <div class="slide-container active">
             <div class="slide">
-                <img src="img/banner/slider1.jpg" alt="imagem2">
-            </div>
-            <div class="slide">
-                <img src="img/banner/slider2.jpg" alt="imagem3">
-            </div>
-
-            <!-- troca automatica -->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
+                <div class="content">
+                    <span>nome do produto</span>
+                    <h3>subtitulo do produto</h3>
+                    <p>descrição do produto</p>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+                <div class="image">
+                    <img src="img/banner/camisas/pigs-travis.png" class="shoe" alt="">
+                </div>
             </div>
         </div>
-        <!-- navegação manual -->
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>nome do produto</span>
+                    <h3>subtitulo do produto</h3>
+                    <p>descrição do produto</p>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+                <div class="image">
+                    <img src="img/banner/camisas/pigs-whind.png" class="shoe" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="js/home.js"></script>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>nome do produto</span>
+                    <h3>subtitulo do produto</h3>
+                    <p>descrição do produto</p>
+                    <a href="#" class="btn">adicionar ao carrinho</a>
+                </div>
+                <div class="image">
+                    <img src="img/banner/camisas/pigs.png" class="shoe" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+
+    </section>
+    <script src="js/banner.js"></script>
 
         <!-- serviços -->
         <h1 class="services-title"> nossos serviços </h1>
@@ -80,7 +95,7 @@ include('menu.php');
 
     <!-- anunciando alguns produtos -->
     <section class="txt" id="txt">
-        <div class="content">
+        <div class="info">
             <h3>TOP <span>CULTURE</span></h3>
             <br>
             <p>Estilo é uma forma de dizer quem você é sem precisar falar.</p>
