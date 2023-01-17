@@ -17,7 +17,7 @@
 
         <?php
         @session_start();
-        // var_dump($_SESSION);
+        //  var_dump($_SESSION);
         if($_SESSION['logina'] === true){
        echo "<li><a href=logoff.php>Sair</a></li>";
     }else{
