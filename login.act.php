@@ -15,7 +15,7 @@ $target = "";
         $login = mysqli_fetch_array($buscar);
         if($senha === $login['senha']){
             // $_SESSION['login'] = true;
-            $_SESSION['logina'] = true;
+            $_SESSION['login'] = true;
             $_SESSION['email'] = $login['email'];
             $target = "location:home.php";
             $msg = " ";    
