@@ -27,7 +27,7 @@ include('menu.php');
                     <span>nome do produto</span>
                     <h3>subtitulo do produto</h3>
                     <p>descrição do produto</p>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
+                    <a href="error.php" class="btn">adicionar ao carrinho</a>
                 </div>
                 <div class="image">
                     <img src="img/banner/camisas/pigs-travis.png" class="shoe" alt="">
@@ -40,7 +40,7 @@ include('menu.php');
                     <span>nome do produto</span>
                     <h3>subtitulo do produto</h3>
                     <p>descrição do produto</p>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
+                    <a href="error.php" class="btn">adicionar ao carrinho</a>
                 </div>
                 <div class="image">
                     <img src="img/banner/camisas/pigs-whind.png" class="shoe" alt="">
@@ -53,7 +53,7 @@ include('menu.php');
                     <span>nome do produto</span>
                     <h3>subtitulo do produto</h3>
                     <p>descrição do produto</p>
-                    <a href="#" class="btn">adicionar ao carrinho</a>
+                    <a href="error.php" class="btn">adicionar ao carrinho</a>
                 </div>
                 <div class="image">
                     <img src="img/banner/camisas/pigs.png" class="shoe" alt="">
@@ -127,7 +127,7 @@ include('menu.php');
                     Ele expressa a cultura e o comportamento urbano que cada comunidade carrega, por meio de peças e
                     acessórios.</p>
                 <div class="button">
-                    <a href="#"><button type="button" class="btn">visitar</button></a>
+                    <a href="error.php"><button type="button" class="btn">visitar</button></a>
                 </div>
             </div>
         </div>
@@ -140,27 +140,27 @@ include('menu.php');
         <div class="box-container">
             <div class="box">
                 <h3>nossos links</h3>
-                <a href=""><i class="fas fa-angle-right"></i>Top Culture</a>
-                <a href=""><i class="fas fa-angle-right"></i>Acessórios</a>
-                <a href=""><i class="fas fa-angle-right"></i>Roupas</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>Top Culture</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>Acessórios</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>Roupas</a>
             </div>
             <div class="box">
                 <h3>atendimento</h3>
-                <a href=""><i class="fas fa-angle-right"></i>FAQ</a>
-                <a href=""><i class="fas fa-angle-right"></i>termos de serviços</a>
-                <a href=""><i class="fas fa-angle-right"></i>fale conosco</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>FAQ</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>termos de serviços</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>fale conosco</a>
             </div>
             <div class="box">
                 <h3>our links</h3>
-                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
-                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
-                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>lançamentos</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>acessórios</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>marcas</a>
             </div>
             <div class="box">
                 <h3>our links</h3>
-                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
-                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
-                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>lançamentos</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>acessórios</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>marcas</a>
             </div>
         </div>
         <div class="credit">Copyright © by TopCulture | all rights reserved!</div>
