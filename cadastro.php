@@ -28,6 +28,10 @@
                         <input type="text" name="sobrenome" placeholder="Digite seu sobrenome">
                     </div>
                     <div class="input-group">
+                        <label for="nome">email</label>
+                        <input type="text" name="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="input-group">
                         <label for="nome">senha</label>
                         <input type="password" name="senha" placeholder="Digite sua senha">
                     </div>
