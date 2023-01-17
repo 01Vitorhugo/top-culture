@@ -7,7 +7,7 @@ include('menu.php');
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Top Culture</title>
     <link rel="stylesheet" href="CSS/home.css">
     <!-- icons -->
@@ -17,41 +17,56 @@ include('menu.php');
 </head>
 
 <body>
-    <!-- slides iniciais -->
-    <section class="news">ao navegar nesse site você aceita o risco de viciar nos nossos produtos?</section>
-    <!-- botões -->
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-
-            <!-- imagens -->
-            <div class="slide first">
-                <img src="img/banner/teste1.jpg" alt="imagem1">
-            </div>
+    <!-- mensagem pós menu -->
+    <header class="news">ao navegar nesse site você aceita o risco de viciar nos nossos produtos?</header>
+    <!-- slides/banner -->
+    <section class="banner" id="banner">
+        <div class="slide-container active">
             <div class="slide">
-                <img src="img/banner/teste2.jpg" alt="imagem2">
-            </div>
-            <div class="slide">
-                <img src="img/banner/teste3.jpg" alt="imagem3">
-            </div>
-
-            <!-- troca automatica -->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
+                <div class="content">
+                    <span>nome do produto</span>
+                    <h3>subtitulo do produto</h3>
+                    <p>descrição do produto</p>
+                    <a href="error.php" class="btn">adicionar ao carrinho</a>
+                </div>
+                <div class="image">
+                    <img src="img/banner/camisas/pigs-travis.png" class="shoe" alt="">
+                </div>
             </div>
         </div>
-        <!-- navegação manual -->
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>nome do produto</span>
+                    <h3>subtitulo do produto</h3>
+                    <p>descrição do produto</p>
+                    <a href="error.php" class="btn">adicionar ao carrinho</a>
+                </div>
+                <div class="image">
+                    <img src="img/banner/camisas/pigs-whind.png" class="shoe" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="js/home.js"></script>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>nome do produto</span>
+                    <h3>subtitulo do produto</h3>
+                    <p>descrição do produto</p>
+                    <a href="error.php" class="btn">adicionar ao carrinho</a>
+                </div>
+                <div class="image">
+                    <img src="img/banner/camisas/pigs.png" class="shoe" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+
+    </section>
+    <script src="js/banner.js"></script>
 
         <!-- serviços -->
         <h1 class="services-title"> nossos serviços </h1>
@@ -80,7 +95,7 @@ include('menu.php');
 
     <!-- anunciando alguns produtos -->
     <section class="txt" id="txt">
-        <div class="content">
+        <div class="info">
             <h3>TOP <span>CULTURE</span></h3>
             <br>
             <p>Estilo é uma forma de dizer quem você é sem precisar falar.</p>
@@ -112,7 +127,7 @@ include('menu.php');
                     Ele expressa a cultura e o comportamento urbano que cada comunidade carrega, por meio de peças e
                     acessórios.</p>
                 <div class="button">
-                    <a href="#"><button type="button" class="btn">visitar</button></a>
+                    <a href="error.php"><button type="button" class="btn">visitar</button></a>
                 </div>
             </div>
         </div>
@@ -124,28 +139,28 @@ include('menu.php');
     <section class="footer">
         <div class="box-container">
             <div class="box">
-                <h3>our links</h3>
-                <a href=""><i class="fas fa-angle-right"></i>Top Culture</a>
-                <a href=""><i class="fas fa-angle-right"></i>Acessórios</a>
-                <a href=""><i class="fas fa-angle-right"></i>Roupas</a>
+                <h3>nossos links</h3>
+                <a href="error.php"><i class="fas fa-angle-right"></i>Top Culture</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>Acessórios</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>Roupas</a>
             </div>
             <div class="box">
                 <h3>atendimento</h3>
-                <a href=""><i class="fas fa-angle-right"></i>FAQ</a>
-                <a href=""><i class="fas fa-angle-right"></i>termos de serviços</a>
-                <a href=""><i class="fas fa-angle-right"></i>fale conosco</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>FAQ</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>termos de serviços</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>fale conosco</a>
             </div>
             <div class="box">
                 <h3>our links</h3>
-                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
-                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
-                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>lançamentos</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>acessórios</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>marcas</a>
             </div>
             <div class="box">
                 <h3>our links</h3>
-                <a href=""><i class="fas fa-angle-right"></i>lançamentos</a>
-                <a href=""><i class="fas fa-angle-right"></i>acessórios</a>
-                <a href=""><i class="fas fa-angle-right"></i>marcas</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>lançamentos</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>acessórios</a>
+                <a href="error.php"><i class="fas fa-angle-right"></i>marcas</a>
             </div>
         </div>
         <div class="credit">Copyright © by TopCulture | all rights reserved!</div>

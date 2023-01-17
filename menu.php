@@ -11,9 +11,9 @@
 <body>
     <nav>
         <ul>
-        <li><a href="#">Top Culture</a></li>
+        <li><a href="error.php">Top Culture</a></li>
         <li><a href="acessorios.php">Acessórios</a></li>
-        <li><a href="#">Roupas</a></li>
+        <li><a href="error.php">Roupas</a></li>
 
         <?php
         @session_start();
