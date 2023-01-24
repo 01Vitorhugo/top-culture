@@ -17,7 +17,7 @@
         <div class="container">
 
             <div class="logo-container">
-                <img src="img/logo/logo.png" alt="" class="img" height="80px">
+                <img src="img/logo/tc-black.png" alt="" class="img" height="80px">
                 <h3 class="logo">TOP <span>CULTURE</span></h3>
             </div>
 
@@ -108,7 +108,7 @@
                         </li>
 
                         <li class="nav-link">
-                            <a href="error.php">About us</a>
+                            <a href="about.php">About us</a>
                         </li>
 
                     </ul>
