@@ -17,8 +17,8 @@
 
         <?php
         @session_start();
-        //  var_dump($_SESSION);
-        if($_SESSION['logina'] === true){
+        //   var_dump($_SESSION);
+        if($_SESSION['login'] === true){
        echo "<li><a href=logoff.php>Sair</a></li>";
     }else{
        echo "<li><a href=login.php>Entrar</a></li>";

@@ -1,6 +1,6 @@
 <?php
 @session_start();
-$_SESSION['logina'] = false;
+$_SESSION['login'] = false;
 $_SESSION['email'] = "";
 // $_SESSION['a'] = false;
 $_SESSION['msg'] = "" ;
