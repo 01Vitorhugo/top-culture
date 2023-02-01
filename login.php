@@ -30,13 +30,13 @@
                 <h2>acesse sua conta</h2>
                 <form action="login.act.php" method="post">
                     <div class="entry">
-                        <input type="text" nome="email" placeholder="email">
+                        <input type="text" name="email" placeholder="email">
                     </div>
                     <div class="entry">
-                        <input type="password" nome="senha" placeholder="senha">
+                        <input type="password" name="senha" placeholder="senha">
                     </div>
                     <div class="center">
-                        <button>entrar</button>
+                    <p><input type="submit" value="cadastar"></p>
                     </div>
                 </form>
                 <div class="links">

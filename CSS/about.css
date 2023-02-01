@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#showcase {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url('../img/logo/logoBanner.png') no-repeat center center/cover;
+}
+
+#show-container {
+    text-align: center;
+}
+
+#show-container h2 {
+    font-size: 3rem;
+}
+
+#show-container p {
+    font-size: 1rem;
+    padding: 7px 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    background: white;
+}
+.card{
+    position: relative;
+    width: 360px;
+    height: 180px;
+    margin: 6px;
+    background: #fff;
+    transition: 0.6s;
+}
+.card:hover{
+    height: 460px;
+}
+.card .lines{
+    position: absolute;
+    inset: 0;
+    background: black;
+    overflow: hidden;
+}
+.card .lines::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #581258, #581258,#581258, transparent);
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+.card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+.card .imgBox{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: black;
+    transition: 0.6s;
+    z-index: 10;
+    overflow: hidden;
+}
+.card:hover .imgBox{
+    width: 250px;
+    height: 250px;
+}
+.card .imgBox img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    /* filter: grayscale(1); */
+}
+.card .imgBox::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent, #581258, #581258,#581258, transparent);
+    animation: animate2 5s linear infinite;
+}
+@keyframes animate2{
+    0%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+.card .imgBox::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+
+/*==== detalhes ====*/
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.6s;
+    transform: translateY(145px);
+}
+.card:hover .content .details{
+    transform: translateY(0px);
+}
+.card .content .details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #581258;
+    line-height: 1.2em;
+}
+.card .content .details h2 span{
+    font-size: 0.70em;
+    font-weight: 500;
+    color: #fff;
+}
+.card .content .details .dt{
+    display: flex;
+    justify-content: space-between;
+    margin: 46px 0;
+}
+.card .content .details .dt ion-icon{
+    font-size: 30px;
+    color: #581258;
+}

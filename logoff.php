@@ -4,5 +4,5 @@ $_SESSION['login'] = false;
 $_SESSION['email'] = "";
 // $_SESSION['a'] = false;
 $_SESSION['msg'] = "" ;
-header("location:home.php");
+header("location:error.php");
 ?>
