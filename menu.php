@@ -11,18 +11,6 @@
 </head>
 
 <body>
-
-        <?php
-        @session_start();
-        //   var_dump($_SESSION);
-        if($_SESSION['login'] === true){
-       echo "<li><a href=logoff.php>Sair</a></li>";
-    }else{
-       echo "<li><a href=login.php>Entrar</a></li>";
-    }
-        ?>
-
-
         <div class="container">
 
             <div class="logo-container">
@@ -126,7 +114,7 @@
                     <?php
                     @session_start();
                     // var_dump($_SESSION);
-                    if (!isset($_SESSION['login']) || $_SESSION['login'] != true){
+                    if($_SESSION['login'] === true){
                         echo "<a href=logoff.php class=btn-log>exit</a>";
                     }else {
                         echo "<a href=login.php class=btn-log>Log in</a>";
